@@ -1,0 +1,25 @@
+input {
+    inline-size: 20%;
+    block-size: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.choose-value {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.result-label {
+    block-size: 3rem;
+    inline-size: 100%;
+    font-size: 2rem;
+}
+
+.three-row-grid {
+    block-size: 12rem;
+    inline-size: 10rem;
+    display: grid;
+    place-items: center;
+}

@@ -1,0 +1,6 @@
+.clock-div {
+    block-size: 12rem;
+    inline-size: 10rem;
+    display: grid;
+    place-items: center;
+}
