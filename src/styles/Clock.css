@@ -4,3 +4,12 @@
     display: grid;
     place-items: center;
 }
+
+.clock-list {
+    padding: 0;
+}
+
+.clock-list li {
+    border: 2px solid var(--color-two);
+    padding: 0.2rem;
+}

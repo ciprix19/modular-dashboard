@@ -6,11 +6,7 @@ export default function Counter() {
     const [countValue, setCountValue] = useState(1);
 
     function handleTyping(value) {
-        if (Number(value) == NaN) {
-            console.log('da');
-        } else {
-            setCountValue(Number(value));
-        }
+        setCountValue(Number(value));
     }
 
     return (

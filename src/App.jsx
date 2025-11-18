@@ -1,17 +1,18 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Footer from './footer/Footer'
 import Header from './header/Header'
 import Main from './main/Main'
+import { ThemeContext } from './utils/ThemeContext'
 
 function App() {
-    const [count, setCount] = useState(0)
+    const [theme, setTheme] = useState('dark');
 
     return (
-        <div className='wrapper'>
-            <Header />
+        <div className='wrapper' data-theme={theme}>
+            <Header theme={theme} setTheme={setTheme}></Header>
             <Main />
             <Footer />
         </div>

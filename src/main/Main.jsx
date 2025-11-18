@@ -33,7 +33,7 @@ export default function Main() {
     return (
         <main>
             <div className='two-column-layout'>
-                <div className='teal-bg widget-list'>
+                <div className='teal-bg widget-menu'>
                     <ul>
                        {Object.keys(widgetMap).map(name => (
                         <li key={name} onDoubleClick={() => handleDblClickSelection(name)}>
@@ -43,7 +43,7 @@ export default function Main() {
                     </ul>
                 </div>
                 <div className="teal-bg dashboard-panel">
-                    <ul className='widgets-list'>
+                    <ul className='widgets-panel'>
                         {renderWidgets.map(w => {
                             const W = w.component;
                             return (
