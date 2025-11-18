@@ -18,7 +18,6 @@ input {
 }
 
 .three-row-grid {
-    block-size: 12rem;
     inline-size: 10rem;
     display: grid;
     place-items: center;

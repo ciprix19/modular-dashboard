@@ -1,15 +1,10 @@
 .clock-div {
-    block-size: 12rem;
-    inline-size: 10rem;
-    display: grid;
-    place-items: center;
+    border: 0.3rem solid var(--color-two);
+    margin-block: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
-.clock-list {
-    padding: 0;
-}
-
-.clock-list li {
-    border: 2px solid var(--color-two);
-    padding: 0.2rem;
+.clock-div h2 {
+    padding-inline: 0.5rem;
 }

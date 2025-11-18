@@ -23,9 +23,6 @@
   margin-inline: 1rem;
 }
 
-.teal-bg {
-}
-
 .widget-menu {
   background-color: var(--color-one);
   border-inline: 0.3rem solid var(--color-two);
@@ -36,6 +33,7 @@
   flex-wrap: wrap;
   margin: 1rem;
   padding: 0;
+  align-items: flex-start;
 }
 
 .dashboard-panel {
@@ -56,6 +54,7 @@
   text-align: center;
   position: relative;
   margin: 1rem;
+  padding: 1rem;
 }
 
 .delete-card {

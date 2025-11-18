@@ -66,6 +66,7 @@ header {
 
 body {
   margin: 0;
+  color: var(--color-four);
 }
 
 main {
@@ -84,6 +85,22 @@ h1 {
   line-height: 1.1;
 }
 
+input {
+  background-color: var(--color-two);
+  color: var(--color-four);
+}
+
+select {
+  background-color: inherit;
+  color: inherit;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+option {
+  background-color: var(--color-one);
+  color: var(--color-four);
+}
+
 button {
   border-radius: 8px;
   border: 0.2rem solid var(--color-two);
@@ -94,6 +111,7 @@ button {
   background-color: var(--color-one);
   cursor: pointer;
   transition: border-color 0.25s;
+  color: var(--color-four);
 }
 button:disabled {
   border-color: var(--color-four);

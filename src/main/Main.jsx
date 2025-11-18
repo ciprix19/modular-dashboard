@@ -15,7 +15,7 @@ export default function Main() {
     const [renderWidgets, setRenderWidgets] = useState([]);
 
     useEffect(() => {
-        console.log(renderWidgets);
+        // console.log(renderWidgets);
     });
 
     function handleDblClickSelection(widgetName) {
@@ -33,7 +33,7 @@ export default function Main() {
     return (
         <main>
             <div className='two-column-layout'>
-                <div className='teal-bg widget-menu'>
+                <div className='widget-menu'>
                     <ul>
                        {Object.keys(widgetMap).map(name => (
                         <li key={name} onDoubleClick={() => handleDblClickSelection(name)}>
@@ -42,7 +42,7 @@ export default function Main() {
                        ))}
                     </ul>
                 </div>
-                <div className="teal-bg dashboard-panel">
+                <div className="dashboard-panel">
                     <ul className='widgets-panel'>
                         {renderWidgets.map(w => {
                             const W = w.component;
