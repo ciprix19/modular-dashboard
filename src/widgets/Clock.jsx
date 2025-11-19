@@ -1,7 +1,5 @@
 import '../styles/Clock.css'
 import { useState, useRef, useEffect } from 'react';
-import Stopwatch from './Stopwatch';
-import Timer from './Timer';
 
 // to do (2 modes) - stopwatch and set timer
 export default function Clock() {

@@ -1,0 +1,19 @@
+.cat-generator-div {
+    inline-size: 30rem;
+    block-size: 60vh;
+    display: grid;
+    place-items: center;
+}
+
+.image-cat {
+    max-inline-size: 100%;
+    block-size: 50vh;
+    display: block;
+    border: 0.5rem solid var(--color-four);
+    border-radius: 5rem;
+}
+
+.generateCatButton {
+    max-inline-size: 50%;
+    margin-block: 0.5rem;
+}

@@ -2,11 +2,19 @@ import { useState, useEffect, useRef, use } from 'react'
 import Calculator from '../widgets/Calculator';
 import Clock from '../widgets/Clock';
 import Counter from '../widgets/Counter';
+import Notepad from '../widgets/Notepad';
+import CatGenerator from '../widgets/CatGenerator';
+import TaskList from '../widgets/TaskList';
+import WheaterPanel from '../widgets/WeatherPanel';
 
 let widgetMap = {
     Calculator: Calculator,
     Clock: Clock,
-    Counter: Counter
+    Counter: Counter,
+    Notepad: Notepad,
+    'Cat generator': CatGenerator,
+    TaskList: TaskList,
+    'Wheater Panel': WheaterPanel
 };
 
 let onScreenWidgetId = 0;
