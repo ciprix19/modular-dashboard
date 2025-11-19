@@ -46,6 +46,7 @@
 .dashboard-panel {
   overflow: hidden;
   background: linear-gradient(var(--color-three), var(--color-four));
+  /* position: relative; */
 }
 
 .two-column-layout {
@@ -71,4 +72,10 @@
   position: absolute;
   top: -1.5rem;
   right: -1.5rem;
+}
+
+.rectangle {
+  block-size: 10rem;
+  inline-size: 10rem;
+  background-color: blue;
 }

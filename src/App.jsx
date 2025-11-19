@@ -10,8 +10,13 @@ import { ThemeContext } from './utils/ThemeContext'
 function App() {
     const [theme, setTheme] = useState('dark');
 
+    function mouse_down(event) {
+        event.preventDefault();
+        console.log(event);
+    }
+
     return (
-        <div className='wrapper' data-theme={theme}>
+        <div className='wrapper' data-theme={theme} onMouseDown={mouse_down}>
             <Header theme={theme} setTheme={setTheme}></Header>
             <Main />
             <Footer />

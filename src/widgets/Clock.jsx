@@ -10,6 +10,7 @@ export default function Clock() {
     const [timer, setTimer] = useState({m: 30, s: '00'});
 
     function handleOption(e) {
+        e.stopPropagation();
         secondsPassed = 0;
         clearInterval(intervalRef.current);
         setSelectedOption(e.target.value);
@@ -19,7 +20,8 @@ export default function Clock() {
 
     }
 
-    function handleStart() {
+    function handleStart(e) {
+        e.stopPropagation();
         if (selectedOption === 'stopwatch') {
             setStartTime(Date.now());
             setNow(Date.now());
@@ -32,7 +34,8 @@ export default function Clock() {
         }
     }
 
-    function handleStop() {
+    function handleStop(e) {
+        e.stopPropagation();
         clearInterval(intervalRef.current);
     }
 
@@ -55,9 +58,9 @@ export default function Clock() {
                 ) : (
                     <div className='clock-div'>
                         {/* bad i think */}
-                        <h2 contentEditable='true' onChange={handleTimerChange}>{timer.m}</h2>
+                        <h2 contentEditable='true' onChange={e => handleTimerChange(e)}>{timer.m}</h2>
                         <h2>:</h2>
-                        <h2 contentEditable='true' onChange={handleTimerChange}>{timer.s}</h2>
+                        <h2 contentEditable='true' onChange={e => handleTimerChange(e)}>{timer.s}</h2>
                     </div>
                 )
             }
