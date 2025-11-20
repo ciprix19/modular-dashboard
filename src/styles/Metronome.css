@@ -1,0 +1,30 @@
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-button,
+.minus-button,
+.plus-button {
+    border-radius: 1rem;
+}
+
+.slider-container {
+
+}
+.slider {
+    -webkit-appearance: none; /* hide the slider in order to create a new one */
+    background-color: var(--color-three);
+    color: var(--color-three);
+    inline-size: 10rem;
+    block-size: 0.5rem;
+    border-radius: 1rem;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 0.5rem solid var(--color-four);
+    block-size: 2rem;
+    inline-size: 2rem;
+    border-radius: 2rem;
+    background-color: var(--color-four);
+}
